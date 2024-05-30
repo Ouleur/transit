@@ -43,13 +43,9 @@ def image_to_base64(image_name):
     with open(image_name, "rb") as f:
         image = Image.open(f)
 
-
-    
     # Convert the image to base64 format
     with open(image_name, "rb") as f:
         encoded_image = base64.b64encode(f.read())
-
-
 
     # Save the encoded image to a file
     with open("image.txt", "w") as f:
